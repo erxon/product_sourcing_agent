@@ -1,38 +1,51 @@
-# Product Sourcing Agent
+# 🤖 AI Product Sourcer
 
-Description: An agent that searches for the top 3 cheapest, but good quality product.
+An agentic AI system designed to autonomously find the cheapest and highest-quality products based on user preferences. Powered by **crewAI** and **Streamlit**.
 
-Researcher Agent -> Quality Analyst -> Quotation Generator
+## ✨ Features
+- **Intelligent Sourcing**: Multi-agent orchestration to research and analyze products.
+- **Location-Aware**: Finds products specific to your region.
+- **Preference Matching**: Tailors recommendations based on your budget and shipping needs.
+- **PDF Reports**: (Coming Soon) Automatically generate a sourcing report.
+- **Interactive UI**: Real-time agent status updates via Streamlit.
 
-## Agents
-1. Researcher: The user inputs a product name in the search field, and the agent will search for that particular product and curate the top 10 list
-2. Quality Analyst: Analyzes the quality of each product according to reviews and ratings
-3. Quotation Generator: Gather the output of Quality Analyst and outputs the top 3 good quality affordable products
+## 🛠️ Technology Stack
+- **Framework**: [crewAI](https://crewai.com)
+- **UI**: [Streamlit](https://streamlit.io)
+- **Tools**: Tavily Search, LangChain
+- **Language**: Python >= 3.10, < 3.14
 
+## 🚀 Getting Started
 
-## Tech
-- I have used Python as the main language
-- CrewAI framework for agent orchestration.
-- Streamlit for the UI.
-- Tavily API for web scraping/web search
+### 1. Installation
+Ensure you have [uv](https://docs.astral.sh/uv/) installed:
+```bash
+pip install uv
+```
 
-## 🛠️ Installation & Setup
-1. **Clone the repo:**
-   ```bash
-   git clone [https://github.com/yourusername/product-sourcing-agent.git](https://github.com/yourusername/product-sourcing-agent.git)
-   cd product-sourcing-agent
-2. **Install dependencies using uv**
-   ```bash
-   uv sync
-   ```
-3. **Run the app**
-   ```bash
-   uv run streamlit run app.py
-   ```
+Install dependencies:
+```bash
+uv sync
+```
 
-**Contact me if you want to test the deployed app**    
-[LinkedIn](https://www.linkedin.com/in/ericson-castasus/)
+### 2. Configuration
+Create a `.env` file in the root directory and add your API keys:
+```env
+OPENAI_API_KEY=your_openai_key
+TAVILY_API_KEY=your_tavily_key
+```
 
+### 3. Running the App
+Start the Streamlit interface:
+```bash
+uv run streamlit run app.py
+```
 
+## 📂 Project Structure
+- `app.py`: Main Streamlit application.
+- `src/product_sourcing_agent/`: Core agent and task definitions.
+- `config/`: YAML configurations for agents and tasks.
+- `fonts/`: Custom fonts for PDF generation.
 
-
+---
+Built with ❤️ by Ericson.
