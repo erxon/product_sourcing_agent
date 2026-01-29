@@ -1,4 +1,4 @@
-# AI Product Sourcer
+# Product Sourcing
 
 An agentic AI system designed to autonomously find the cheapest and highest-quality products based on user preferences. Powered by **crewAI** and **Streamlit**.
 
@@ -46,5 +46,6 @@ uv run streamlit run app.py
 
 ---
 Built with ❤️ by Ericson.
+
 
 
