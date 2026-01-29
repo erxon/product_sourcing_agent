@@ -4,10 +4,7 @@ An agentic AI system designed to autonomously find the cheapest and highest-qual
 
 ## ✨ Features
 - **Intelligent Sourcing**: Multi-agent orchestration to research and analyze products.
-- **Location-Aware**: Finds products specific to your region.
 - **Preference Matching**: Tailors recommendations based on your budget and shipping needs.
-- **PDF Reports**: (Coming Soon) Automatically generate a sourcing report.
-- **Interactive UI**: Real-time agent status updates via Streamlit.
 
 ## 🛠️ Technology Stack
 - **Framework**: [crewAI](https://crewai.com)
@@ -49,3 +46,4 @@ uv run streamlit run app.py
 
 ---
 Built with ❤️ by Ericson.
+
