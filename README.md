@@ -2,7 +2,7 @@
 
 Description: An agent that searches for the top 3 cheapest, but good quality product.
 
-Researcher Agent -> Quality A
+Researcher Agent -> Quality Analyst -> Quotation Generator
 
 ## Agents
 1. Researcher: The user inputs a product name in the search field, and the agent will search for that particular product and curate the top 10 list
@@ -32,6 +32,7 @@ Researcher Agent -> Quality A
 
 **Contact me if you want to test the deployed app**    
 [LinkedIn](https://www.linkedin.com/in/ericson-castasus/)
+
 
 
 
