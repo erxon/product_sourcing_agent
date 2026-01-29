@@ -1,0 +1,31 @@
+research_task:
+  description: >
+    Search for the latest prices for {product_name} in {location} according to user's preferences. 
+    Include shipping if visible.
+    User's preferences: {preferences}
+  expected_output: >
+    A list of 10 product URLs with their current prices.
+  agent: researcher
+  markdown: true
+  output_file: product_list.md
+
+quality_analysis:
+  description: >
+    Analyze the product listings. For each one, calculate a 'Total Quality Score' 
+    using the following weights: Sentiment (40%), Reputation (20%), Specs (30%),
+    and Logistics (10%). Discard any product that scores below 7.0 total.
+  expected_output: >
+    A filtered list of high-quality options with brief quality summaries.
+  agent: quality_analyst
+  markdown: true
+  output_file: filtered_product_list.md
+
+quote_generation:
+  description: >
+    Compare the remaining options. 
+    Choose the top 3 cheapest options that has a 'Total Quality Score' greater than or equal to 7.0.
+  expected_output: >
+    A final quote including the product name, price, quality score, and the direct link to the specific product.
+  agent: quote_specialist
+  markdown: true
+  output_file: final_quote.md
